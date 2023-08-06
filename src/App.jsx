@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Todo from './Pages/Todo.jsx';
+import Todo from './Pages/todo';
 
 function App() {
   return (

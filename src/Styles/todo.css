@@ -1,0 +1,189 @@
+.titoloTodo {
+    text-align: center;
+
+}
+
+.containerTodo {
+    background-color: mediumseagreen;
+    width: 280px;
+    height: 470px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 70px;
+    box-shadow: 5px 0 10px rgba(120, 120, 120);
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+.containerTodo h1 {
+    text-align: center;
+}
+
+.attivita {
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    border: 1px solid black;
+}
+
+.containerTodo2 {
+    background-color: mediumturquoise;
+    width: 280px;
+    height: 470px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 70px;
+    box-shadow: 5px 0 10px rgba(120, 120, 120);
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+.contenitoreGenerale {
+    display: flex;
+    justify-content: start;
+}
+
+.containerTodo2 h1 {
+    text-align: center;
+}
+
+.attivita {
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    border: 1px solid black;
+}
+
+.containerTodo3 {
+    background-color: mediumspringgreen;
+    width: 280px;
+    height: 470px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 70px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0);
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+.containerTodo3 h1 {
+    text-align: center;
+}
+
+.attivita {
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    border: 1px solid black;
+}
+
+.attivita:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.attivita:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.containerTodo4 {
+    background-color: mediumslateblue;
+    width: 280px;
+    height: 470px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 70px;
+    box-shadow: 5px 0 10px rgba(120, 120, 120);
+    border: 2px solid black;
+    opacity: 0.8;
+}
+
+.containerTodo4 h1 {
+    text-align: center;
+}
+
+.attivita {
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    margin-top: 20px;
+    width: 240px;
+    height: 160px;
+    background-color: azure;
+    border-radius: 7px;
+    margin-left: 19.5px;
+}
+
+.attivita {
+    border: 1px solid black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+}

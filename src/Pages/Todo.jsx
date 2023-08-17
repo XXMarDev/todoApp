@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../Styles/todo.css';
+import Attivita from '../Components/attivita';
 
 function Todo() {
     const [listaToDo, setListaToDo] = useState([
@@ -58,13 +59,10 @@ function Todo() {
                         }}>
                             {
                                 listaToDo.map(elemento => (
-                                    <div className="attivita">
-                                        <h2>{elemento.titolo}</h2>
-                                        <p>{elemento.descrizione}</p>
-                                    </div>
+                                    <Attivita titolo={elemento.titolo} descrizione={elemento.descrizione} />
                                 ))
                             }
-
+ 
                         </div>
                     </div>
 
@@ -78,10 +76,7 @@ function Todo() {
                             height: "340px"
                         }}>{
                                 listaProgress.map(element => (
-                                    <div className="attivita">
-                                        <h2>{element.titolo}</h2>
-                                        <p>{element.descrizione}</p>
-                                    </div>
+                                    <Attivita titolo={element.titolo} descrizione={element.descrizione} />
                                 ))
                             }</div>
                     </div>
@@ -98,10 +93,7 @@ function Todo() {
                             }}>
                                 {
                                     listaTesting.map(elemento => (
-                                        <div className="attivita">
-                                            <h2>{elemento.titolo}</h2>
-                                            <p>{elemento.descrizione}</p>
-                                        </div>
+                                        <Attivita titolo={elemento.titolo} descrizione={elemento.descrizione} />
                                     ))
                                 }
 
@@ -117,13 +109,11 @@ function Todo() {
                             height: "340px"
                         }}>{
                                 listaProgress.map(element => (
-                                    <div className="attivita">
-                                        <h2>{element.titolo}</h2>
-                                        <p>{element.descrizione}</p>
-                                    </div>
+                                    <Attivita titolo={element.titolo} descrizione={element.descrizione} />
                                 ))
                             }</div>
                     </div>
+                    
                 </div>
 
             </div>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Studente from "./studente";
 
 function Studenti() {
     const contenitoriStile = (
@@ -24,24 +26,28 @@ function Studenti() {
 
     const [utenti, setUtenti] = useState([
         {
-            nomeInt1: "Marco Salvi",
-            age1: "13.3",
-            descrzione1: "Marco è un ragazzo di 13 anni pieno di curiosità e creatività. Ama leggere, fare nuove amicizie e suonare il pianoforte. Con il suo sorriso contagioso, è un amico premuroso e socievole."
+            nomeInt: "Marco Salvi",
+            age: "13.3",
+            descrzione: "Marco è un ragazzo di 13 anni pieno di curiosità e creatività. Ama leggere, fare nuove amicizie e suonare il pianoforte. Con il suo sorriso contagioso, è un amico premuroso e socievole.",
+            id: 1111
         },
         {
-            nomeInt2: "Franceso Romano",
-            age2: "13.7",
-            descrzione2: "Francesco, 13 anni, è un animo curioso con una passione per la tecnologia e l'immaginazione. Amico premuroso e appassionato di sport, è sempre pronto a scoprire nuove avventure."
+            nomeInt: "Franceso Romano",
+            age: "13.7",
+            descrzione: "Francesco, 13 anni, è un animo curioso con una passione per la tecnologia e l'immaginazione. Amico premuroso e appassionato di sport, è sempre pronto a scoprire nuove avventure.",
+            id: 2222
         },
         {
-            nomeInt3: "Giuseppe Rossi",
-            age3: "13.5",
-            descrzione3: "Giuseppe, 13 anni, è un esploratore instancabile con una passione per il calcio e una creatività che si riflette nei suoi disegni e nelle storie che crea."
+            nomeInt: "Giuseppe Rossi",
+            age: "13.5",
+            descrzione: "Giuseppe, 13 anni, è un esploratore instancabile con una passione per il calcio e una creatività che si riflette nei suoi disegni e nelle storie che crea.",
+            id: 3333
         },
         {
-            nomeInt4: "Raffaele Bianchi",
-            age4: "14.1",
-            descrzione4: "Raffaele Bianchi, con i suoi 14 anni di età, è un ragazzo che irradia vitalità e intraprendenza. Ha una grande passione per la musica per l'arte e per l' informatica."
+            nomeInt: "Raffaele Bianchi",
+            age: "14.1",
+            descrzione: "Raffaele Bianchi, con i suoi 14 anni di età, è un ragazzo che irradia vitalità e intraprendenza. Ha una grande passione per la musica per l'arte e per l' informatica.",
+            id: 4444
         }
 
     ])
@@ -66,53 +72,16 @@ function Studenti() {
         }
     )
 
+    const navigate =  useNavigate()
     return (
         <div>
-            <h1 style={{ textAlign: "center" }}>Migliori studenti</h1>
+            <h1 style={{ textAlign: "center" }}>Studenti dell'anno</h1>
             <div style={contenitoreGeneraleStyle}>
-                <div style={contenitoriStile}>{utenti.map(elementoUtenti => (
-                    <div>
-                        <h1>{elementoUtenti.nomeInt1}</h1>
-                        <h2>{elementoUtenti.age1}</h2>
-                        <p>{elementoUtenti.descrzione1}</p>
-                    </div>
-
-                ))}
-                    <button style={btnStyle}><a href="/utOne" style={linkStyle}>Leggi di più...</a></button>
-                </div>
-                <div style={contenitoriStile}>{utenti.map(elementoUtenti => (
-                    <div>
-                        <h1>{elementoUtenti.nomeInt2}</h1>
-                        <h2>{elementoUtenti.age2}</h2>
-                        <p>{elementoUtenti.descrzione2}</p>
-                    </div>
-
-                ))}
-                    <button style={btnStyle}><a href="/utDue" style={linkStyle}>Leggi di più...</a></button>
-                </div>
-                <div style={contenitoriStile}>{utenti.map(elementoUtenti => (
-                    <div>
-                        <h1>{elementoUtenti.nomeInt3}</h1>
-                        <h2>{elementoUtenti.age3}</h2>
-                        <p>{elementoUtenti.descrzione3}</p>
-                    </div>
-                ))}
-
-                    <button style={btnStyle}>
-                    <a href="/utre" style={linkStyle}>Leggi di più...</a>
-                    </button>
-                </div>
-                <div style={contenitoriStile}>{utenti.map(elementoUtenti => (
-                    <div>
-                        <h1>{elementoUtenti.nomeInt4}</h1>
-                        <h2>{elementoUtenti.age4}</h2>
-                        <p>{elementoUtenti.descrzione4}</p>
-                    </div>
-                ))}
-                    <button style={btnStyle}>
-                        <a href="/utquattro" style={linkStyle}>Leggi di più...</a>
-                    </button>
-                </div>
+                {
+                    utenti.map(elemento => (
+                       <Studente nome={elemento.nomeInt} descrizione={elemento.descrzione} age={elemento.age} id={elemento.id} />
+                    ))
+                }
             </div>
         </div>
     )

@@ -46,7 +46,7 @@ function Todo() {
 
     return (
         <div>
-            <h1 className='titoloTodo'>Notes - To Do</h1>
+            <h1 className='text-[red]'>Notes - To Do</h1>
             <div className='contenitoreGenerale'>
                 <div className="containerTodo">
                     <div className='activity1'>

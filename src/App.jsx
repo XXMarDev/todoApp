@@ -5,10 +5,8 @@ import Todo from './Pages/todo';
 import DatiUt from './Pages/datiUt';
 import Prova from './Pages/prova';
 import Studenti from './Components/utenti';
-import UtOne from './Components/utOne';
-import UtDue from './Components/utDue';
-import UtTre from './Components/utTre';
-import UtFour from './Components/utFour';
+import PaginaUtenti from './Pages/paginaUtenti';
+import Ecommerce from './Ecommerce/ecommerce';
 
 function App() {
   return (
@@ -18,10 +16,8 @@ function App() {
         <Route path="/datiUt" element={<DatiUt />}/>
         <Route path='/prova' element={<Prova />} />
         <Route path='/studenti' element={<Studenti />}/>
-        <Route path='/utone' element={<UtOne />}/>
-        <Route path='/utdue' element={<UtDue />}/>
-        <Route path='/utre' element={<UtTre />}/>
-        <Route path='/utquattro' element={<UtFour />}/>
+        <Route path='/utente/:idUtente' element={<PaginaUtenti />} />
+        <Route path='/ecommerce' element={<Ecommerce />}/>
       </Routes>
     </BrowserRouter>
   );

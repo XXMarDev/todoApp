@@ -7,6 +7,8 @@ import Prova from './Pages/prova';
 import Studenti from './Components/utenti';
 import PaginaUtenti from './Pages/paginaUtenti';
 import Ecommerce from './Ecommerce/ecommerce';
+import Login from './Ecommerce/ecommLogin';
+import Registrati from './Ecommerce/ecommRegistrati';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/studenti' element={<Studenti />}/>
         <Route path='/utente/:idUtente' element={<PaginaUtenti />} />
         <Route path='/ecommerce' element={<Ecommerce />}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='/registrati' element={<Registrati />}/>
       </Routes>
     </BrowserRouter>
   );

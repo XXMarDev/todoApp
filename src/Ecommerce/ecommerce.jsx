@@ -34,7 +34,7 @@ function Ecommerce() {
                     <button className='enter'>Enter</button>
 
                     <div className='logACC'>
-                        <p><a href="" className='log'>Accedi</a></p>
+                        <p><a href="/login" className='log'>Accedi</a></p>
                         <p>
                             <a href="" className='log'>Registrati</a>
                         </p>
